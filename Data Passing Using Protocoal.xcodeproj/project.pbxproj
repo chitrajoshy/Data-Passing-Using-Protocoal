@@ -12,6 +12,7 @@
 		38D8889C22F152B500BA2550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D8889A22F152B500BA2550 /* Main.storyboard */; };
 		38D8889E22F152B600BA2550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38D8889D22F152B600BA2550 /* Assets.xcassets */; };
 		38D888A122F152B600BA2550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D8889F22F152B600BA2550 /* LaunchScreen.storyboard */; };
+		38D888AD22F153AB00BA2550 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D888AC22F153AB00BA2550 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		38D8889D22F152B600BA2550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38D888A022F152B600BA2550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38D888A222F152B600BA2550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38D888AC22F153AB00BA2550 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		38D8889522F152B500BA2550 /* Data Passing Using Protocoal */ = {
 			isa = PBXGroup;
 			children = (
-				38D8889622F152B500BA2550 /* AppDelegate.swift */,
-				38D8889822F152B500BA2550 /* ViewController.swift */,
+				38D888AA22F152F600BA2550 /* Controller */,
+				38D888A922F152EA00BA2550 /* View */,
+				38D888A822F152DF00BA2550 /* Model */,
+				38D888AB22F152FF00BA2550 /* Supporting Files */,
+			);
+			path = "Data Passing Using Protocoal";
+			sourceTree = "<group>";
+		};
+		38D888A822F152DF00BA2550 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38D888A922F152EA00BA2550 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				38D8889A22F152B500BA2550 /* Main.storyboard */,
 				38D8889D22F152B600BA2550 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38D888AA22F152F600BA2550 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38D8889622F152B500BA2550 /* AppDelegate.swift */,
+				38D8889822F152B500BA2550 /* ViewController.swift */,
+				38D888AC22F153AB00BA2550 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38D888AB22F152FF00BA2550 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				38D8889F22F152B600BA2550 /* LaunchScreen.storyboard */,
 				38D888A222F152B600BA2550 /* Info.plist */,
 			);
-			path = "Data Passing Using Protocoal";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D888AD22F153AB00BA2550 /* SecondViewController.swift in Sources */,
 				38D8889922F152B500BA2550 /* ViewController.swift in Sources */,
 				38D8889722F152B500BA2550 /* AppDelegate.swift in Sources */,
 			);
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DBRF948JS;
-				INFOPLIST_FILE = "Data Passing Using Protocoal/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Data Passing Using Protocoal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DBRF948JS;
-				INFOPLIST_FILE = "Data Passing Using Protocoal/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Data Passing Using Protocoal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
